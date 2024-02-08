@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Montserrat:wght@600&display=swap');
+:root{
+    --cor-primaria: #404B69;
+    --cor-secundaria: #4ECCA3;
+    --cor-terciaria:#A7D129;
+    --cor-quartenaria:#FFD700 ;
+    --cor-houver:#0C7B93;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-quartenaria);
+}
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__menu__link{
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 1.5rem;
+    color:var(--cor-quartenaria);
+    text-decoration: none;
+}
+
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.apresentacao__conteudo__titulo{
+    font-size: 2.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+.apresentacao__conteudo__texto{
+    font-size: 1.5rem;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+.apresentacao__conteudo__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.apresentacao__conteudo__subtitulo{
+    font-family: 'krona One', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    
+}
+.apresentacao__conteudo__links__botao{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-quartenaria);
+    font-family: 'Gowun Dodum', sans-serif;
+}
+.apresentacao__conteudo__links__botao:hover {
+    background-color: var(--cor-houver);
+    font-size: 1.813rem;
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__imagem{
+    width: 40%;
+}
+.rodape{
+    padding: 24px;
+    color:var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+@media (max-width: 1200px) {
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
+
